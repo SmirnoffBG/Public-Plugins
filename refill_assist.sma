@@ -38,7 +38,6 @@ public umirane(id, killer)
 		rg_instant_reload_weapons(killer)
 		set_task(0.5, "SecondReload", killer)
 	}
-	
 	if(g_bitDamageDone[id] != ( 1 << (killer & 31))) // if attacker is not just the killer
 	{
 		new iPl[32], iNum, iAssist
